@@ -1,0 +1,87 @@
+
+/* exercício 1
+int[]x = new int[15];
+
+for (int i = 1; i <= 15; i++)
+{
+    int a = i;
+    a = a * a+1;
+    x[i] = a;
+    Console.WriteLine(x[i]);
+}
+*/
+
+/* exercícios 2
+int[] n = new int[10];
+
+for (int i = 1; i <= 10; i++)
+{
+Console.WriteLine("Insira um número: ");
+n[i] = int.Parse(Console.ReadLine());
+
+    if (n[i] % 2 != 0)
+    {
+        Console.Write("ímpar");
+    }
+    else 
+    {
+        Console.Write("par\n");
+    };
+    Console.ReadKey();
+    Console.Clear();
+    i++;
+}
+*/
+
+/* exercício 3
+int n;
+int res;
+int soma = 0;
+int contador = 0;
+
+Console.WriteLine("Escolha um num: ");
+n = int.Parse(Console.ReadLine());
+
+int[] valores = new int[n];
+res = n;
+
+for (int i = 0; i < n; i++)
+{
+    valores[i] = res;
+    res--;
+    soma += valores[i];
+    contador++;
+}
+
+Console.WriteLine("Soma total: " + soma);
+Console.WriteLine("Quantidade de valores: " + contador);
+*/
+
+/* parte 2 ex 1
+double grauscelcius;
+
+Console.WriteLine("Digite a temperatura em graus Celsius:");
+grauscelcius = Convert.ToInt32(Console.ReadLine());
+
+double fahrenheit = (grauscelcius * 1.8) + 32;
+Console.WriteLine("A temperatura em Fahrenheit é: " + fahrenheit);
+*/
+
+/* parte 2 ex 2
+int[] notas = new int[4];
+double media = 0;
+int soma = 0;
+
+for (int i = 0; i < notas.Length; i++)
+{
+    Console.WriteLine("Digite a nota: ");
+    notas[i] = int.Parse(Console.ReadLine());
+    soma += notas[i];
+}
+
+media = (double)soma / notas.Length;
+
+Console.WriteLine("A média é: " + media);
+*/
+
+
