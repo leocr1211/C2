@@ -1,0 +1,89 @@
+/* MAIN
+using Atividade_LP2.eq2grau;
+
+namespace eqdosegundograu
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Exibicao.Executar();
+        }
+    }
+}
+*/
+
+/* Classe que da os objetos e calcula
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atividade_LP2.eq2grau
+{
+    class Elementos
+    {
+        public double a, b, c;
+        public double delta, x1, x2;
+
+        public Elementos(double A, double B, double C)
+        {
+            a = A;
+            b = B;
+            c = C;
+        }
+
+        public void Calcular()
+        {
+            delta = b * b - 4 * a * c;
+
+            if (delta >= 0)
+            {
+                x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+                x2 = (-b - Math.Sqrt(delta)) / (2 * a);
+            }
+            else
+            {
+                Console.WriteLine("Não existem raízes reais.");
+            }
+        }
+
+    }
+}
+*/
+
+/* Classe pra mostrar
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Numerics;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atividade_LP2.eq2grau
+{
+    class Exibicao
+    {
+        public static void Executar()
+        {
+            double x, y, z;
+
+            Console.WriteLine("Digite o valor dos coeficiente A");
+            x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o valor dos coeficientes B");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o valor dos coeficientes C");
+            z = int.Parse(Console.ReadLine());
+
+            Elementos daeq = new Elementos(x, y, z);
+
+            daeq.Calcular();
+
+            Console.WriteLine($"Raízes da Equação são : {daeq.x1} {daeq.x2}");
+
+
+        }
+    }
+}
+*/
