@@ -1,0 +1,72 @@
+// usando pastas e invocando classes
+
+/* classe 1
+namespace CursoLP2
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            ProgramaQuadrilatero.Executar();
+        }
+    }
+}
+*/
+
+/* classe 2
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CursoLP2.Atividade_quadrilatero
+{
+        class Quadrilatero
+        {
+            // atributos
+            public double Altura;
+            public double Largura;
+
+            //métodos construtor
+            public Quadrilatero(double altura, double largura)
+            {
+                Altura = altura;
+                Largura = largura;
+            }
+
+            //outros métodos
+            public double calculaArea()
+            {
+                return Altura * Largura;
+            }
+
+        }
+}
+*/
+
+/* classe 3
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CursoLP2.Atividade_quadrilatero
+{
+
+    public class ProgramaQuadrilatero()
+    {
+        public static void Executar()
+        {
+            Quadrilatero quadrado = new Quadrilatero(2,2);
+            Quadrilatero retangulo = new Quadrilatero(3, 4);
+
+            Console.WriteLine("Área do quadrado: " + quadrado.calculaArea());
+            Console.WriteLine("Área do retângulo: " + retangulo.calculaArea());
+        }
+
+    }
+
+}
