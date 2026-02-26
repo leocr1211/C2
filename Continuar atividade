@@ -1,0 +1,46 @@
+/*
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LeBron.Estatísticas
+{
+    class Jogador
+    {
+        public string Nome;
+        public double Pts, Assis, Rb;
+
+        public Jogador(string nome, double pts, double assis, double rb) 
+        { 
+            Nome = nome;
+            Pts = pts;
+            Assis = assis;
+            Rb = rb;
+        }
+
+        public Comparador()
+        {
+           
+        }
+    }
+}
+*/
+
+/*
+public static void resumo(int pts, int rb, int asis)
+{
+    Console.WriteLine("Estatísticas do LeBron James temporada 17/18");
+    Console.WriteLine("Média de pontos = " + pts);
+    Console.WriteLine("Média de rebotes = " + rb);
+    Console.WriteLine("Média de assistências = " + asis);
+
+    Console.WriteLine("Estatísticas do Victor Wenbanyama temporada 25/26");
+    Console.WriteLine("Média de pontos = " + pts);
+    Console.WriteLine("Média de rebotes = " + rb);
+    Console.WriteLine("Média de assistências = " + asis);
+
+    Console.WriteLine("");
+}
+*/
