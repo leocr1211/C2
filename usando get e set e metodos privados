@@ -1,0 +1,43 @@
+   private class Valores {
+    private float n1, n2, n3, n4;
+
+    // Construtor sem 'this'
+    public Valores(float v1, float v2, float v3, float v4) {
+        n1 = v1;
+        n2 = v2;
+        n3 = v3;
+        n4 = v4;
+    }
+
+    public void setN1(float nota1) { n1 = nota1; }
+    public void setN2(float nota2) { n2 = nota2; }
+    public void setN3(float nota3) { n3 = nota3; }
+    public void setN4(float nota4) { n4 = nota4; }
+
+    public float getN1() { return n1; }
+    public float getN2() { return n2; }
+    public float getN3() { return n3; }
+    public float getN4() { return n4; }
+    
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        float n1 = Float.parseFloat(jTextField1.getText());
+        float n2 = Float.parseFloat(jTextField2.getText());
+        float n3 = Float.parseFloat(jTextField3.getText());
+        float n4 = Float.parseFloat(jTextField4.getText());
+
+        Valores v = new Valores(n1, n2, n3, n4);
+        float media = (n1+ n2+ n3+ n4)/4;
+        
+        if(media < 4)
+        {
+            jTextField5.setText(String.valueOf("Está reprovado com: "+media));
+        }
+        else if(media > 4 && media <6)
+        {
+            jTextField5.setText(String.valueOf("Está de recuperação com: "+media));
+        }
+        else
+        {
+            jTextField5.setText(String.valueOf("Está de aprovado com: "+media));
+        }  
